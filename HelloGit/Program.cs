@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,23 @@ namespace HelloGit
 
         public static void Display()
         {
-            // Write out to the screen
+            ArrayList al = new ArrayList();
+            BuildOutArray(al);
+
+            foreach (string s in al)
+            {
+                Console.WriteLine(s);
+            }
             Console.ReadLine();
-            Console.Write("Hello Git!");
+        }
+
+        public static ArrayList BuildOutArray(ArrayList al)
+        {
+            al.Add("Todd");
+            al.Add("Tiff");
+            al.Add("Kelley");
+
+            return al;
         }
     }
 }
