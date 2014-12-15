@@ -19,5 +19,9 @@ namespace HelloGit
             Console.ReadLine();
             Console.Write("Hello Git!");
         }
+
+        public static void New()
+        {
+        }
     }
 }
