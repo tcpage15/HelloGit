@@ -16,8 +16,8 @@ namespace HelloGit
         public static void Display()
         {
             // Write out to the screen
+            Console.WriteLine("Hello Git!");
             Console.ReadLine();
-            Console.Write("Hello Git!");
         }
 
         public static void New()
